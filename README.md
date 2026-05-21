@@ -9,17 +9,20 @@ Flutter と Riverpod でミニ SNS フィードを作るハンズオン用テン
 Cloud Shell を開いたら、ターミナルで次を実行します。
 
 ```bash
-./cloudshell_setup.sh
+git config --global --add safe.directory /google/flutter
+flutter --version
+flutter config --enable-web
+flutter pub get
 ```
 
-このスクリプトは、Cloud Shell にプリインストールされている `/google/flutter` を PATH に追加し、git の safe-directory 設定、Flutter Web の有効化、`flutter pub get` を実行します。Flutter SDK はダウンロードしません。
+Cloud Shell には `/google/flutter` に Flutter SDK がプリインストールされており、`flutter` コマンドへの PATH も設定済みです。Flutter SDK はダウンロードしません。
 
 ## Run in Cloud Shell
 
 Cloud Shell では Chrome を直接起動せず、Web Preview 用の `web-server` デバイスを使います。
 
 ```bash
-./cloudshell_run.sh
+flutter run -d web-server --web-hostname 0.0.0.0 --web-port 8080
 ```
 
 次のような表示が出たら、Cloud Shell の **Web Preview** から **Preview on port 8080** を開きます。

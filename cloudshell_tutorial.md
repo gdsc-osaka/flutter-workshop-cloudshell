@@ -7,17 +7,20 @@
 Cloud Shell のターミナルで次を実行します。
 
 ```bash
-./cloudshell_setup.sh
+git config --global --add safe.directory /google/flutter
+flutter --version
+flutter config --enable-web
+flutter pub get
 ```
 
-Cloud Shell にプリインストールされている `/google/flutter` が使われます。Flutter SDK はダウンロードされません。`flutter pub get` まで完了すれば準備完了です。
+Cloud Shell にプリインストールされている `/google/flutter` が使われます。`flutter` コマンドへの PATH は設定済みです。Flutter SDK はダウンロードされません。`flutter pub get` まで完了すれば準備完了です。
 
 ## アプリを起動する
 
 Cloud Shell では Chrome デバイスではなく、Web Preview 用の web-server デバイスで起動します。
 
 ```bash
-./cloudshell_run.sh
+flutter run -d web-server --web-hostname 0.0.0.0 --web-port 8080
 ```
 
 次のような表示が出るまで待ちます。
