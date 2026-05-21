@@ -10,7 +10,7 @@ Cloud Shell のターミナルで次を実行します。
 ./cloudshell_setup.sh
 ```
 
-Flutter SDK がない場合は `$HOME/flutter` にインストールされます。`flutter pub get` まで完了すれば準備完了です。
+Cloud Shell にプリインストールされている `/google/flutter` が使われます。Flutter SDK はダウンロードされません。`flutter pub get` まで完了すれば準備完了です。
 
 ## アプリを起動する
 

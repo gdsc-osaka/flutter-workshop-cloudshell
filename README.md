@@ -12,7 +12,7 @@ Cloud Shell を開いたら、ターミナルで次を実行します。
 ./cloudshell_setup.sh
 ```
 
-このスクリプトは、Cloud Shell に Flutter SDK がない場合だけ `$HOME/flutter` に stable channel をインストールし、Flutter Web を有効化して `flutter pub get` を実行します。
+このスクリプトは、Cloud Shell にプリインストールされている `/google/flutter` を PATH に追加し、git の safe-directory 設定、Flutter Web の有効化、`flutter pub get` を実行します。Flutter SDK はダウンロードしません。
 
 ## Run in Cloud Shell
 
