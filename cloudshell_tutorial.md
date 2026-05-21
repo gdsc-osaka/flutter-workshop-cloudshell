@@ -13,7 +13,7 @@ flutter config --enable-web
 flutter pub get
 ```
 
-Cloud Shell にプリインストールされている `/google/flutter` が使われます。`flutter` コマンドへの PATH は設定済みです。Flutter SDK はダウンロードされません。`flutter pub get` まで完了すれば準備完了です。
+Cloud Shell にプリインストールされている `/google/flutter` が使われます。`flutter` コマンドはそのまま使えます。Flutter SDK はダウンロードされません。`flutter pub get` まで完了すれば準備完了です。
 
 ## アプリを起動する
 
